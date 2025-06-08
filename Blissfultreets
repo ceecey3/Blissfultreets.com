@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Organic Pap Co. – Nourishing Traditional Pap</title>
+  <meta name="description" content="Organic Pap Co. offers traditional, organic pap products for health-conscious families.">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+</head>
+<body>
+<header>
+  <!-- Navigation bar -->
+  <nav class="navbar">
+    <div class="brand">Organic Pap Co.</div>
+    <div class="toggle-btn" onclick="toggleMenu()">☰</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+      <li><a href="testimonials.html">Testimonials</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+  <h1>Nourish Your Family with Natural Goodness</h1>
+  <p>Discover our organic, traditional pap porridge made with love and care.</p>
+  <a href="products.html" class="btn">Shop Now</a>
+</section>
+
+<!-- Featured Products -->
+<section class="featured-products">
+  <h2>Featured Products</h2>
+  <div class="product-grid">
+    <!-- Product 1 -->
+    <div class="product-card">
+      <img src="https://source.unsplash.com/400x300/?corn,porridge" alt="Classic Organic Corn Pap">
+      <h3>Classic Corn Pap</h3>
+      <p class="price">$10.00</p>
+      <p>Creamy traditional pap made from organic white corn.</p>
+      <ul class="nutrition">
+        <li>144 calories (per cup)<!-- Based on SnapCalorie data9 --></li>
+        <li>Carbs: 31g</li>
+        <li>Protein: 2g</li>
+        <li>Fat: 1g</li>
+      </ul>
+      <button onclick="addToCart('Classic Corn Pap', 10.00)" class="btn">Add to Cart</button>
+    </div>
+    <!-- Product 2 -->
+    <div class="product-card">
+      <img src="https://source.unsplash.com/400x300/?millet,porridge" alt="Millet and Oat Pap">
+      <h3>Millet & Oat Pap</h3>
+      <p class="price">$12.00</p>
+      <p>A wholesome blend of organic millet and oats for fiber and flavor.</p>
+      <ul class="nutrition">
+        <li>150 calories (per cup)</li>
+        <li>Carbs: 30g</li>
+        <li>Protein: 3g</li>
+        <li>Fat: 2g</li>
+      </ul>
+      <button onclick="addToCart('Millet & Oat Pap', 12.00)" class="btn">Add to Cart</button>
+    </div>
+    <!-- Product 3 -->
+    <div class="product-card">
+      <img src="https://source.unsplash.com/400x300/?cereal,porridge" alt="Mixed Cereal Pap">
+      <h3>Mixed Cereal Pap</h3>
+      <p class="price">$15.00</p>
+      <p>A hearty mix of organic grains (corn, millet, and soy) for extra nutrients.</p>
+      <ul class="nutrition">
+        <li>160 calories (per cup)</li>
+        <li>Carbs: 32g</li>
+        <li>Protein: 4g</li>
+        <li>Fat: 2g</li>
+      </ul>
+      <button onclick="addToCart('Mixed Cereal Pap', 15.00)" class="btn">Add to Cart</button>
+    </div>
+  </div>
+</section>
+
+<!-- Mission Statement -->
+<section class="mission">
+  <h2>Our Mission</h2>
+  <p>Organic Pap Co. is committed to providing pap made from 100% organic ingredients. We partner with local farmers to ensure tradition and quality. Enjoy the wholesome taste of our products, free from harmful pesticides10 and additives.</p>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025 Organic Pap Co. All rights reserved.</p>
+  <p>Contact us: info@organicpapco.com | +234-800-123-4567</p>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Our Products - Organic Pap Co.</title>
+  <meta name="description" content="Browse our catalog of organic pap products. Each item includes images, descriptions, nutrition info, and price.">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+</head>
+<body>
+<header>
+  <nav class="navbar">
+    <div class="brand">Organic Pap Co.</div>
+    <div class="toggle-btn" onclick="toggleMenu()">☰</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+      <li><a href="testimonials.html">Testimonials</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Products Catalog -->
+<section class="products">
+  <h1>Our Products</h1>
+  <div class="product-grid">
+    <!-- Product 1 -->
+    <div class="product-card">
+      <img src="https://source.unsplash.com/400x300/?corn,porridge" alt="Classic Organic Corn Pap">
+      <h3>Classic Corn Pap</h3>
+      <p class="price">$10.00</p>
+      <p>Creamy traditional pap made from organic white corn.</p>
+      <ul class="nutrition">
+        <li>144 calories (per cup)</li>
+        <li>Carbs: 31g</li>
+        <li>Protein: 2g</li>
+        <li>Fat: 1g</li>
+      </ul>
+      <button onclick="addToCart('Classic Corn Pap', 10.00)" class="btn">Add to Cart</button>
+    </div>
+    <!-- Product 2 -->
+    <div class="product-card">
+      <img src="https://source.unsplash.com/400x300/?millet,porridge" alt="Millet and Oat Pap">
+      <h3>Millet & Oat Pap</h3>
+      <p class="price">$12.00</p>
+      <p>A wholesome blend of organic millet and oats for fiber and flavor.</p>
+      <ul class="nutrition">
+        <li>150 calories (per cup)</li>
+        <li>Carbs: 30g</li>
+        <li>Protein: 3g</li>
+        <li>Fat: 2g</li>
+      </ul>
+      <button onclick="addToCart('Millet & Oat Pap', 12.00)" class="btn">Add to Cart</button>
+    </div>
+    <!-- Product 3 -->
+    <div class="product-card">
+      <img src="https://source.unsplash.com/400x300/?cereal,porridge" alt="Mixed Cereal Pap">
+      <h3>Mixed Cereal Pap</h3>
+      <p class="price">$15.00</p>
+      <p>A hearty mix of organic grains (corn, millet, and soy) for extra nutrients.</p>
+      <ul class="nutrition">
+        <li>160 calories (per cup)</li>
+        <li>Carbs: 32g</li>
+        <li>Protein: 4g</li>
+        <li>Fat: 2g</li>
+      </ul>
+      <button onclick="addToCart('Mixed Cereal Pap', 15.00)" class="btn">Add to Cart</button>
+    </div>
+    <!-- Product 4 -->
+    <div class="product-card">
+      <img src="https://source.unsplash.com/400x300/?soymilk,porridge" alt="Organic Soy Pap">
+      <h3>Organic Soy Pap</h3>
+      <p class="price">$14.00</p>
+      <p>High-protein pap made with organic soy for a hearty, nutritious meal.</p>
+      <ul class="nutrition">
+        <li>155 calories (per cup)</li>
+        <li>Carbs: 30g</li>
+        <li>Protein: 5g</li>
+        <li>Fat: 3g</li>
+      </ul>
+      <button onclick="addToCart('Organic Soy Pap', 14.00)" class="btn">Add to Cart</button>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 Organic Pap Co. All rights reserved.</p>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Cart - Organic Pap Co.</title>
+  <meta name="description" content="Review your selected products in the cart and proceed to checkout.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <nav class="navbar">
+    <div class="brand">Organic Pap Co.</div>
+    <div class="toggle-btn" onclick="toggleMenu()">☰</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+      <li><a href="testimonials.html">Testimonials</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Cart Section -->
+<section class="cart">
+  <h1>Your Shopping Cart</h1>
+  <div id="cart-container"></div>
+</section>
+
+<footer>
+  <p>&copy; 2025 Organic Pap Co. All rights reserved.</p>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Checkout - Organic Pap Co.</title>
+  <meta name="description" content="Secure checkout - provide shipping and payment details to complete your order.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <nav class="navbar">
+    <div class="brand">Organic Pap Co.</div>
+    <div class="toggle-btn" onclick="toggleMenu()">☰</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+      <li><a href="testimonials.html">Testimonials</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Checkout Form -->
+<section class="checkout">
+  <h1>Secure Checkout</h1>
+  <form class="checkout-form">
+    <h2>Shipping Details</h2>
+    <label>
+      Name:
+      <input type="text" placeholder="Full Name" required>
+    </label>
+    <label>
+      Address:
+      <input type="text" placeholder="Street Address, City, Country" required>
+    </label>
+    <label>
+      Email:
+      <input type="email" placeholder="you@example.com" required>
+    </label>
+    <h2>Payment Method</h2>
+    <label><input type="radio" id="card" name="payment" checked> Credit Card</label>
+    <label><input type="radio" id="mobile" name="payment"> Mobile Money</label>
+    <div id="card-info">
+      <label>
+        Card Number:
+        <input type="text" placeholder="1234 5678 9012 3456" required>
+      </label>
+      <label>
+        Expiry Date:
+        <input type="text" placeholder="MM/YY" required>
+      </label>
+      <label>
+        CVV:
+        <input type="text" placeholder="CVV" required>
+      </label>
+    </div>
+    <div id="mobile-info" style="display:none;">
+      <label>
+        Provider:
+        <input type="text" placeholder="e.g. MTN Mobile Money">
+      </label>
+      <label>
+        Phone Number:
+        <input type="text" placeholder="+234xxxxxxxxxx">
+      </label>
+    </div>
+    <button type="submit" class="btn">Complete Purchase</button>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2025 Organic Pap Co. All rights reserved.</p>
+</footer>
+
+<script src="main.js"></script>
+<script>
+// Toggle between credit card and mobile money fields
+document.getElementById('card').addEventListener('change', function() {
+  document.getElementById('card-info').style.display = 'block';
+  document.getElementById('mobile-info').style.display = 'none';
+});
+document.getElementById('mobile').addEventListener('change', function() {
+  document.getElementById('card-info').style.display = 'none';
+  document.getElementById('mobile-info').style.display = 'block';
+});
+</script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Testimonials - Organic Pap Co.</title>
+  <meta name="description" content="Read testimonials from our satisfied customers who love our organic pap.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <nav class="navbar">
+    <div class="brand">Organic Pap Co.</div>
+    <div class="toggle-btn" onclick="toggleMenu()">☰</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+      <li><a href="testimonials.html">Testimonials</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Testimonials Section -->
+<section class="testimonials">
+  <h1>What Our Customers Say</h1>
+  <div class="testimonial">
+    <p>"I love starting my day with their organic corn pap. It keeps me full and energized!"</p>
+    <strong>- Aisha, Lagos</strong>
+  </div>
+  <div class="testimonial">
+    <p>"My baby loves the millet pap. I feel great knowing it's all-natural and healthy."</p>
+    <strong>- Chinedu, Abuja</strong>
+  </div>
+  <div class="testimonial">
+    <p>"As a health coach, I recommend their pap to all my clients for a nutritious breakfast."</p>
+    <strong>- Dr. Emeka, Abuja</strong>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 Organic Pap Co. All rights reserved.</p>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Us - Organic Pap Co.</title>
+  <meta name="description" content="Learn about Organic Pap Co.'s history, values, and commitment to organic quality.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <nav class="navbar">
+    <div class="brand">Organic Pap Co.</div>
+    <div class="toggle-btn" onclick="toggleMenu()">☰</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+      <li><a href="testimonials.html">Testimonials</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- About Section -->
+<section class="about">
+  <h1>About Organic Pap Co.</h1>
+  <p>Founded in 2015 by a family passionate about traditional nutrition, Organic Pap Co. is dedicated to bringing authentic, organic pap to your table. We partner with local farmers to ensure our grains are sustainably grown and free from harmful chemicals11.</p>
+  <h2>Our Values</h2>
+  <ul>
+    <li><strong>100% Organic Ingredients</strong> – No pesticides or additives12</li>
+    <li><strong>Traditional Recipe</strong> – Honoring age-old preparation methods</li>
+    <li><strong>Sustainability</strong> – Supporting eco-friendly farming practices</li>
+  </ul>
+  <p>Every batch of pap is made with care and respect for quality. We're committed to nourishing families with the natural goodness of organic, traditional foods.</p>
+</section>
+
+<footer>
+  <p>&copy; 2025 Organic Pap Co. All rights reserved.</p>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us - Organic Pap Co.</title>
+  <meta name="description" content="Get in touch with Organic Pap Co. Fill out our contact form or find our location below.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <nav class="navbar">
+    <div class="brand">Organic Pap Co.</div>
+    <div class="toggle-btn" onclick="toggleMenu()">☰</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+      <li><a href="testimonials.html">Testimonials</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Contact Section -->
+<section class="contact">
+  <h1>Contact Us</h1>
+  <p>Have questions or feedback? We'd love to hear from you.</p>
+  <p class="contact-info">
+    Email: <a href="mailto:info@organicpapco.com">info@organicpapco.com</a><br>
+    Phone: +234-800-123-4567<br>
+    Address: Lagos, Nigeria
+  </p>
+  <!-- Embedded Google Map -->
+  <div id="map">
+    <iframe width="100%" height="300" frameborder="0" style="border:0"
+            src="http://maps.google.com/maps?q=6.465422,3.406448&z=14&output=embed" allowfullscreen>
+    </iframe>
+  </div>
+  <form class="contact-form">
+    <label>
+      Name:
+      <input type="text" placeholder="Your Name" required>
+    </label>
+    <label>
+      Email:
+      <input type="email" placeholder="Your Email" required>
+    </label>
+    <label>
+      Message:
+      <textarea placeholder="Your Message" rows="4"></textarea>
+    </label>
+    <button type="submit" class="btn">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2025 Organic Pap Co. All rights reserved.</p>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
+/* Root colors and global styles */
+:root {
+  --color-bg: #fffaf3;
+  --color-primary: #4CAF50;
+  --color-secondary: #8D6E63;
+  --color-accent: #FFB74D;
+  --color-text: #333;
+  --color-muted: #777;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+/* Navigation Bar */
+.navbar {
+  background-color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 2rem;
+}
+.navbar .brand {
+  font-size: 1.5rem;
+  color: white;
+}
+.navbar .toggle-btn {
+  display: none;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+}
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.navbar .nav-links li a {
+  color: white;
+  text-decoration: none;
+  padding: 0.75rem 1rem;
+}
+.navbar .nav-links li a:hover {
+  background-color: var(--color-secondary);
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  background: url('https://source.unsplash.com/1200x400/?traditional,food') no-repeat center;
+  background-size: cover;
+  color: white;
+  padding: 4rem 2rem;
+  position: relative;
+}
+.hero::after {
+  content: '';
+  background: rgba(0,0,0,0.4);
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+}
+.hero h1, .hero p {
+  position: relative;
+  z-index: 1;
+}
+.hero h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+.hero p {
+  font-size: 1.25rem;
+  margin: 1rem 0;
+}
+.hero .btn {
+  background-color: var(--color-accent);
+}
+
+/* Featured Products Section */
+.featured-products, .products {
+  padding: 2rem;
+  text-align: center;
+}
+.featured-products h2, .products h1 {
+  margin-bottom: 1rem;
+  color: var(--color-secondary);
+}
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+.product-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 300px;
+  padding: 1rem;
+  text-align: left;
+}
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+.product-card h3 {
+  margin: 0.5rem 0;
+}
+.product-card .price {
+  font-size: 1.25rem;
+  color: var(--color-secondary);
+  margin-bottom: 0.5rem;
+}
+.product-card .nutrition {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0;
+  color: var(--color-muted);
+}
+.product-card .nutrition li {
+  font-size: 0.9rem;
+}
+.product-card .btn {
+  margin-top: 0.5rem;
+  width: 100%;
+}
+
+/* Mission Section */
+.mission {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  padding: 2rem;
+  text-align: center;
+}
+.mission h2 {
+  color: var(--color-secondary);
+  margin-bottom: 1rem;
+}
+
+/* Testimonials */
+.testimonials {
+  padding: 2rem;
+  background-color: #fff;
+}
+.testimonials h1 {
+  text-align: center;
+  color: var(--color-secondary);
+  margin-bottom: 1rem;
+}
+.testimonial {
+  margin: 1rem 0;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 1rem;
+}
+.testimonial p {
+  font-style: italic;
+}
+.testimonial strong {
+  display: block;
+  margin-top: 0.5rem;
+  text-align: right;
+  color: var(--color-primary);
+}
+
+/* About Section */
+.about {
+  padding: 2rem;
+}
+.about h1 {
+  text-align: center;
+  color: var(--color-secondary);
+  margin-bottom: 1rem;
+}
+.about ul {
+  list-style: disc;
+  margin-left: 2rem;
+}
+
+/* Contact Section */
+.contact {
+  padding: 2rem;
+}
+.contact h1 {
+  text-align: center;
+  color: var(--color-secondary);
+  margin-bottom: 0.5rem;
+}
+.contact p {
+  text-align: center;
+}
+.contact-info {
+  margin-bottom: 1rem;
+  color: var(--color-text);
+}
+#map {
+  margin: 1rem 0;
+}
+
+/* Contact Form */
+.contact-form, .checkout-form {
+  max-width: 600px;
+  margin: auto;
+}
+.contact-form label, .checkout-form label {
+  display: block;
+  margin: 0.5rem 0;
+}
+.contact-form input, .contact-form textarea,
+.checkout-form input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.2rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Cart Section */
+.cart {
+  padding: 2rem;
+  text-align: center;
+}
+.cart h1 {
+  margin-bottom: 1rem;
+  color: var(--color-secondary);
+}
+.cart-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+}
+.cart-table th, .cart-table td {
+  border: 1px solid #ddd;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+/* Checkout Section */
+.checkout {
+  padding: 2rem;
+}
+.checkout h1 {
+  text-align: center;
+  color: var(--color-secondary);
+  margin-bottom: 1rem;
+}
+.checkout-form h2 {
+  margin-top: 1rem;
+  color: var(--color-secondary);
+}
+
+/* Footer */
+footer {
+  background-color: var(--color-secondary);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+footer p {
+  margin: 0.5rem 0;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  color: white;
+  background-color: var(--color-primary);
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+}
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar .toggle-btn {
+    display: block;
+  }
+  .navbar .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+  .navbar.active .nav-links {
+    display: flex;
+  }
+  .product-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero {
+    padding: 2rem 1rem;
+  }
+}
+/* main.js */
+// Update cart count on page load and render cart if on cart page
+document.addEventListener('DOMContentLoaded', function() {
+  updateCartCount();
+  if (document.getElementById('cart-container')) {
+    renderCart();
+  }
+});
+
+// Toggle mobile navigation menu
+function toggleMenu() {
+  document.querySelector('.navbar').classList.toggle('active');
+}
+
+// Add an item to the cart
+function addToCart(productName, price) {
+  let cart = JSON.parse(localStorage.getItem('cart') || '[]');
+  cart.push({ name: productName, price: price });
+  localStorage.setItem('cart', JSON.stringify(cart));
+  updateCartCount();
+  alert(productName + ' has been added to your cart.');
+}
+
+// Update the cart item count in the navbar
+function updateCartCount() {
+  let cart = JSON.parse(localStorage.getItem('cart') || '[]');
+  let countEl = document.getElementById('cart-count');
+  if (countEl) {
+    countEl.innerText = cart.length;
+  }
+}
+
+// Render cart items on the cart page
+function renderCart() {
+  let cart = JSON.parse(localStorage.getItem('cart') || '[]');
+  let cartContainer = document.getElementById('cart-container');
+  if (!cartContainer) return;
+  if (cart.length === 0) {
+    cartContainer.innerHTML = '<p>Your cart is empty.</p>';
+    return;
+  }
+  let html = '<table class="cart-table"><tr><th>Product</th><th>Price</th></tr>';
+  let total = 0;
+  cart.forEach(item => {
+    html += `<tr><td>${item.name}</td><td>$${item.price.toFixed(2)}</td></tr>`;
+    total += item.price;
+  });
+  html += `<tr><td><strong>Total</strong></td><td><strong>$${total.toFixed(2)}</strong></td></tr></table>`;
+  html += `<button onclick="clearCart()" class="btn">Clear Cart</button> `;
+  html += `<a href="checkout.html" class="btn">Checkout</a>`;
+  cartContainer.innerHTML = html;
+}
+
+// Clear the cart
+function clearCart() {
+  localStorage.removeItem('cart');
+  updateCartCount();
+  renderCart();
+}
